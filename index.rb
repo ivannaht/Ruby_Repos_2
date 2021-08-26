@@ -70,8 +70,31 @@ puts("For Fixnum 5%2 is equal #{5%2}" )
 puts("For Float 5.0%2.0 is equal #{5.0%2.0}" )
 puts("5**2 is equal #{5**3}" )
 
-#Task 18
+#Task 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 35
 puts("-"*80)
+
+#Additional task
+puts("-"*80)
+
+def how_many_bouquet_can_be_bought(s)
+  if (s / 359.56) >= 1 and (s / 359.56) < 2
+    puts("You can buy one bouquet")
+  else
+    if (s / 359.56) >= 2 and (s / 359.56) < 3
+      puts("You can buy two bouquets")
+    else
+      if (s / 359.56) >= 3
+        puts("We can sell you 3 busquets, it's all that we have for today")
+      else
+      puts("You cannot buy any bouquet")
+    end
+    end
+    end
+end
+how_many_bouquet_can_be_bought(200)
+how_many_bouquet_can_be_bought(400)
+how_many_bouquet_can_be_bought(800)
+how_many_bouquet_can_be_bought(2000)
 
 
 =begin
