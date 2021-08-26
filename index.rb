@@ -1,4 +1,4 @@
-#Task 6.
+#Task 6
 puts("-"*80)
 puts(1)	# An integer literal
 puts(1.0)	# A floating-point literal
@@ -16,7 +16,7 @@ puts(/three/.class) # Regexp
 puts(true.class) # TrueClass
 puts(nil.class) # NilClass
 
-#Task 7.
+#Task 7, 9, 11
 puts("-"*80)
 NUMBER_OF_RED_ROSES = 5
 NUMBER_OF_WHITE_ROSES = 7
@@ -27,17 +27,51 @@ puts(BOUQUET)
 PRICE_OF_BOUQUET = NUMBER_OF_RED_ROSES * PRICE_OF_RED_ROSES \
   + NUMBER_OF_WHITE_ROSES * PRICE_OF_WHITE_ROSES
 puts("The price of the bouquet is #{PRICE_OF_BOUQUET} dollars")
+NUNBER_OF_BOUQUET = 3
 puts("I have bought\r\n"\
-"3 bouquets of roses\r\n"\
+"#{NUNBER_OF_BOUQUET} bouquets of roses\r\n"\
 "for our teachers\r\n"\
 "on September 1")
 
-
-#Task 8.
+#Task 8
 puts("-"*80)
+=begin
+1care = "CARE"
+puts(1care)
+=end
 
+=begin
+case = "CASE"
+puts(case)
+=end
 
+#Task 9, 10, 11
+puts("-"*80)
+RIGHT_TOTAL_COSTS_1 = NUNBER_OF_BOUQUET \
+* PRICE_OF_BOUQUET
+RIGHT_TOTAL_COSTS_2 = NUNBER_OF_BOUQUET *
+  PRICE_OF_BOUQUET
+puts(RIGHT_TOTAL_COSTS_1)
+puts(RIGHT_TOTAL_COSTS_2)
 
+=begin
+WRONG_TOTAL_COSTS = NUNBER_OF_BOUQUET
+* PRICE_OF_BOUQUET
+=end
+
+#Task 12, 13, 14, 15, 16, 17
+puts("-"*80)
+puts(5/2)
+puts(5.0/2)
+puts(5/2.0)
+#puts(5/0) #rb:67:in `/': divided by 0 (ZeroDivisionError)
+puts(5.5/0) #Infinity
+puts("For Fixnum 5%2 is equal #{5%2}" )
+puts("For Float 5.0%2.0 is equal #{5.0%2.0}" )
+puts("5**2 is equal #{5**3}" )
+
+#Task 18
+puts("-"*80)
 
 
 =begin
