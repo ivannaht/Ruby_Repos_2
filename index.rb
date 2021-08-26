@@ -76,7 +76,7 @@ puts("-"*80)
 #Additional task
 puts("-"*80)
 
-def how_many_bouquet_can_be_bought(s)
+def how_many_bouquets_can_be_bought(s)
   if (s / 359.56) >= 1 and (s / 359.56) < 2
     puts("You can buy one bouquet")
   else
@@ -84,17 +84,17 @@ def how_many_bouquet_can_be_bought(s)
       puts("You can buy two bouquets")
     else
       if (s / 359.56) >= 3
-        puts("We can sell you 3 busquets, it's all that we have for today")
+        puts("We can sell you 3 bouquets, it's all that we have for today")
       else
       puts("You cannot buy any bouquet")
     end
     end
     end
 end
-how_many_bouquet_can_be_bought(200)
-how_many_bouquet_can_be_bought(400)
-how_many_bouquet_can_be_bought(800)
-how_many_bouquet_can_be_bought(2000)
+how_many_bouquets_can_be_bought(200)
+how_many_bouquets_can_be_bought(400)
+how_many_bouquets_can_be_bought(800)
+how_many_bouquets_can_be_bought(2000)
 
 
 =begin
