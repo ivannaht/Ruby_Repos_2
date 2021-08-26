@@ -1,26 +1,44 @@
-#Task 6. Add to the output file of the basic 'edge' literals (Fixnum, Float, String)
+#Task 6.
+puts("-"*80)
 puts(1)	# An integer literal
 puts(1.0)	# A floating-point literal
 puts('one') # A string literal
 puts("two") # Another string literal
 puts(/three/) # A regular expression literal
-
-puts(1.class)	# An integer literal
-puts(1.0.class)	# A floating-point literal
-puts('one'.class) # A string literal
-puts("two".class) # Another string literal
-puts(/three/.class) # A regular expression literal
+puts(true)
+puts(false)
+puts(nil)
+puts(1.class)	# Fixnum
+puts(1.0.class)	# Float
+puts('one'.class) # String
+puts("two".class) # String
+puts(/three/.class) # Regexp
+puts(true.class) # TrueClass
+puts(nil.class) # NilClass
 
 #Task 7.
+puts("-"*80)
 NUMBER_OF_RED_ROSES = 5
 NUMBER_OF_WHITE_ROSES = 7
 PRICE_OF_RED_ROSES = 25.25
 PRICE_OF_WHITE_ROSES = 33.33
 BOUQUET = "The bouquet consists of #{NUMBER_OF_RED_ROSES} red roses and #{NUMBER_OF_WHITE_ROSES} white roses"
 puts(BOUQUET)
-PRICE_OF_BOUQUET = NUMBER_OF_RED_ROSES * PRICE_OF_RED_ROSES +
+PRICE_OF_BOUQUET = NUMBER_OF_RED_ROSES * PRICE_OF_RED_ROSES \
   + NUMBER_OF_WHITE_ROSES * PRICE_OF_WHITE_ROSES
 puts("The price of the bouquet is #{PRICE_OF_BOUQUET} dollars")
+puts("I have bought\r\n"\
+"3 bouquets of roses\r\n"\
+"for our teachers\r\n"\
+"on September 1")
+
+
+#Task 8.
+puts("-"*80)
+
+
+
+
 
 =begin
 1. Install Ruby if not installed.
