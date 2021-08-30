@@ -1,9 +1,9 @@
 #Task 6
-puts("-"*80)
+puts('-'*80)
 puts(1)	# An integer literal
 puts(1.0)	# A floating-point literal
 puts('one') # A string literal
-puts("two") # Another string literal
+puts('two') # Another string literal
 puts(/three/) # A regular expression literal
 puts(true)
 puts(false)
@@ -11,13 +11,13 @@ puts(nil)
 puts(1.class)	# Fixnum
 puts(1.0.class)	# Float
 puts('one'.class) # String
-puts("two".class) # String
+puts('two'.class) # String
 puts(/three/.class) # Regexp
 puts(true.class) # TrueClass
 puts(nil.class) # NilClass
 
 #Task 7, 9, 11
-puts("-"*80)
+puts('-'*80)
 NUMBER_OF_RED_ROSES = 5
 NUMBER_OF_WHITE_ROSES = 7
 PRICE_OF_RED_ROSES = 25.25
@@ -31,10 +31,10 @@ NUNBER_OF_BOUQUET = 3
 puts("I have bought\r\n"\
 "#{NUNBER_OF_BOUQUET} bouquets of roses\r\n"\
 "for our teachers\r\n"\
-"on September 1")
+'on September 1')
 
 #Task 8
-puts("-"*80)
+puts('-'*80)
 =begin
 1care = "CARE"
 puts(1care)
@@ -46,7 +46,7 @@ puts(case)
 =end
 
 #Task 9, 10, 11
-puts("-"*80)
+puts('-'*80)
 RIGHT_TOTAL_COSTS_1 = NUNBER_OF_BOUQUET \
 * PRICE_OF_BOUQUET
 RIGHT_TOTAL_COSTS_2 = NUNBER_OF_BOUQUET *
@@ -60,7 +60,7 @@ WRONG_TOTAL_COSTS = NUNBER_OF_BOUQUET
 =end
 
 #Task 12, 13, 14, 15, 16, 17
-puts("-"*80)
+puts('-'*80)
 puts(5/2)
 puts(5.0/2)
 puts(5/2.0)
@@ -71,22 +71,67 @@ puts("For Float 5.0%2.0 is equal #{5.0%2.0}" )
 puts("5**2 is equal #{5**3}" )
 
 #Task 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 35
-puts("-"*80)
+puts('-'*80)
+WORDS_1 = 'Today '
+WORDS_2 = 'it\'s '
+WORDS_3 = %q(rainy!)
+puts(WORDS_1 + WORDS_2 + WORDS_3)
+
+CURRENT_TIME = Time.new
+WORDS_4 = "Today is #{CURRENT_TIME.month}/#{CURRENT_TIME.day}/#{CURRENT_TIME.year}."
+puts(WORDS_4)
+
+FREQUENCY = 'often'
+WORDS_5 = %Q|"What is the weather like in Ukraine?", \
+I am #{FREQUENCY} asked by foreigners|
+puts(WORDS_5)
+
+TEMPERATURE = 15
+WORDS_6_1 = %-It is now ? degrees Celsius outside\n-
+WORDS_6_2 = format('It is now %+d degrees Celsius outside', TEMPERATURE)
+puts(WORDS_6_1)
+puts(WORDS_6_2)
+
+WORDS_7 = 'I love Ruby'
+puts(WORDS_7[-4])
+puts(WORDS_7[WORDS_7.length-4])
+puts(WORDS_7[0])
+puts(WORDS_7[-WORDS_7.length])
+
+WORDS_8 = 'forever'
+puts(WORDS_7 << ' ' << WORDS_8)
+
+WORDS_9 = 'Hello Ruby'
+puts(WORDS_9[-4, 4])
+puts(WORDS_9[-4..-1])
+
+WORDS_10 = 'Ruby is awesome'
+puts(WORDS_10.gsub(' is ', ' '))
+
+WORDS_11 = 'RUBY'
+puts(WORDS_11.downcase)
+
+WORDS_12 = 'Ruby courses'
+puts(WORDS_12.length)
+puts(WORDS_12.split)
+
+WORDS_13 = 'Ruby'
+puts(WORDS_13.reverse)
 
 #Additional task
-puts("-"*80)
+puts('-'*80)
 
 def how_many_bouquets_can_be_bought(s)
   if (s / 359.56) >= 1 and (s / 359.56) < 2
-    puts("You can buy one bouquet")
+    puts('You can buy one bouquet')
   else
     if (s / 359.56) >= 2 and (s / 359.56) < 3
-      puts("You can buy two bouquets")
+      puts('You can buy two bouquets')
     else
       if (s / 359.56) >= 3
         puts("We can sell you 3 bouquets, it's all that we have for today")
       else
-      puts("You cannot buy any bouquet")
+      puts('You cannot buy any bouquet')
     end
     end
     end
